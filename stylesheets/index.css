@@ -1,0 +1,52 @@
+@font-face { 
+    font-family: 'Switch'; 
+    src: url('../assets/fonts/font.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+html {
+    background-color: #2d2d2d;
+    font-family: Switch;
+    color: white;
+}
+p {
+    font-family: Switch;
+    font-size: 1.5vw;
+}
+#controllerDisplay {
+    position: fixed;
+    bottom: 0.75vw;
+    left: 4vw;
+    height: 3.5vw;
+}
+#bottomLine {
+    position: fixed;
+    background-color: #656565;
+    width: 95vw;
+    height: 0.2vw;
+    bottom: 5vw;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+}
+#topRight {
+    position: fixed;
+    /* background-color: blue; */
+    width: 15vw;
+    height: 5vw;
+    top: 2vw;
+    right: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#battery {
+    width: 4vw;
+    margin-left: 0.25vw;
+    margin-bottom: 0.25vw;
+
+}
+#wifi {
+    width: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 0.25vw;
+}
