@@ -44,6 +44,7 @@ pre {
     align-items: center;
 }
 #battery {
+    filter: brightness(10000000000);
     width: 4vw;
     margin-left: 0.25vw;
     margin-bottom: 0.25vw;
@@ -69,31 +70,27 @@ pre {
 #menuBtn {
     width: 5vw;
     margin: 0.7vw;
-    filter: drop-shadow(0vw 0vw 0.5vw #222);
+    filter: drop-shadow(0vw 0vw 0.2vw #222);
 animation: none;
 transition-duration: 100;
+outline: rgba(0, 0, 0, 0) solid 0.3vw;
+border-radius: 50%;
 }
 #menuBtn:hover {
-    animation: blueEffect 10s infinite linear;
+    animation: blueEffect 0.9s infinite linear;
     cursor: pointer;
 }
 @keyframes blueEffect {
     0% {
-        filter: drop-shadow(0vw 0vw 0.1vw rgb(0, 166, 255));
-    }
-
-    25% {
-        filter: drop-shadow(0vw 0vw 0.4vw rgb(0, 0, 255));
+        outline: rgb(41, 106, 171) solid 0.3vw;
     }
 
     50% {
-        filter: drop-shadow(0vw 0vw 0.4vw rgb(0, 128, 255));
+        outline: rgb(0, 247, 255) solid 0.3vw;
 
     }
-    75% {
-        filter: drop-shadow(0vw 0vw 0.4vw rgb(60, 0, 255));
-    }
     100% {
-        filter: drop-shadow(0vw 0vw 0.4vw rgb(0, 166, 255));
+
+        outline: rgb(41, 106, 171) solid 0.3vw;
     }
 }

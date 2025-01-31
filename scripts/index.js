@@ -5,8 +5,8 @@ console.log(
 );
 function gameFrame() {
 
+time = new Date();
 document.getElementById('clock').innerHTML = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-
-    requestAnimationFrame(gameFrame);
+requestAnimationFrame(gameFrame);
 }
 gameFrame();
