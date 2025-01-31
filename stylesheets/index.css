@@ -11,11 +11,11 @@ html {
 }
 p {
     font-family: Switch;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
 }
 pre {
     font-family: Switch;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
 }
 #controllerDisplay {
     position: fixed;
@@ -71,15 +71,46 @@ pre {
     width: 5vw;
     margin: 0.7vw;
     filter: drop-shadow(0vw 0vw 0.2vw #222);
-animation: none;
-transition-duration: 100;
-outline: rgba(0, 0, 0, 0) solid 0.3vw;
-border-radius: 50%;
+    animation: none;
+    transition-duration: 100;
+    border-radius: 50%;
 }
 #menuBtn:hover {
     animation: blueEffect 0.9s infinite linear;
     cursor: pointer;
 }
+#gameCon {
+    display: flex;
+    /* background-color: hotpink; */
+    width: 200vw;
+    height: 24vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 5vw;
+    bottom:15vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#game {
+    /*background-color: blue;*/
+    width: 18vw;
+    height: 18vw;
+    margin-left: 1vw;
+    filter: drop-shadow(0vw 0vw 0.4vw #222);
+    object-fit:cover;
+
+}
+#game:hover {
+    cursor: pointer;
+    animation: blueEffect 0.9s infinite linear;
+}
+/*
+placeholder:hover {
+    animation: blueEffect 0.9s infinite linear;
+}
+*/
 @keyframes blueEffect {
     0% {
         outline: rgb(41, 106, 171) solid 0.3vw;

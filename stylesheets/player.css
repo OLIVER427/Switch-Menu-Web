@@ -1,0 +1,26 @@
+iframe {
+    height: 95vh;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: 70vw;
+    border: none;
+    outline: none;
+    filter: drop-shadow(0vw 0vw 1vw #000000);
+}
+html {
+    background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 66%, rgba(37,37,37,1) 100%); 
+}
+#backArrow {
+    transform: translate(-50%,-50%);
+    position: fixed;
+    top:3vw;
+    left: 3vw;
+    width: 6vw;
+    transition-duration: 100ms;
+}
+#backArrow:hover {
+    cursor: pointer;
+    width: 7vw;
+}

@@ -4,9 +4,15 @@ console.log(
   time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
 );
 function gameFrame() {
-
 time = new Date();
-document.getElementById('clock').innerHTML = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+document.getElementById('clock').innerHTML = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }).slice(0, -2)
+document.getElementById('AmPm').innerHTML = time.toLocaleString('en-US', { hour: 'numeric',hour12: true }).replace(/[0-9]/g, '');
 requestAnimationFrame(gameFrame);
+
+if (navigator.onLine) {
+    document.getElementById('wifi').src = "assets/images/icons/wifiIcon.png"
+  } else {
+    document.getElementById('wifi').src = "assets/images/icons/nowifi.png"
+}
 }
 gameFrame();

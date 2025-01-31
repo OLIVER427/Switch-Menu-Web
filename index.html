@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" href="assets/images/homeIcon.png">
+    <link rel="icon" href="assets/images/icons/favicon.png">
     <link rel="stylesheet" href="stylesheets/index.css">
     <title>Home</title>
 </head>
 <body>
 <div id="topRight">
-<pre id="clock" style="margin-right: 2vw;">00:00 AM</pre>
-<img id="wifi" src="assets/images/wifiIcon.png"> 
-<p>100</p><p style="font-size: 1vw; margin-top: 1.2vw;">%</p>
-<img id="battery" src="assets/images/batteryIcon.png"> 
+<pre id="clock">00:00</pre><p id="AmPm" style="margin-right: 2vw;font-size: 1vw; margin-top: 1.35vw;">AM</p>
+<img id="wifi" src="assets/images/icons/wifiIcon.png"> 
+<p >100</p><p style="font-size: 1vw; margin-top: 1.2vw;">%</p>
+<img id="battery" src="assets/images/icons/batteryIcon.png"> 
+</div>
+
+<div id="gameCon">
+
+<img id="game" src="assets/images/gameCovers/tetris.jpg" onclick="window.location=('')">
+<img id="game" src="assets/images/gameCovers/firered.jpg" onclick="window.location=('player/FireRed')">
+
 </div>
 
 <div id="btnCon">
 
-    <img id="menuBtn" src="assets/images/newsBtn.png">
-    <img id="menuBtn" src="assets/images/EshopBtn.png">
-    <img id="menuBtn" src="assets/images/galleryBtn.png">
-    <img id="menuBtn" src="assets/images/controllerBtn.png">
-    <img id="menuBtn" src="assets/images/settingsBtn.png">
-    <img id="menuBtn" src="assets/images/powerBtn.png">
+    <img id="menuBtn" src="assets/images/icons/newsBtn.png">
+    <img id="menuBtn" src="assets/images/icons/EshopBtn.png">
+    <img id="menuBtn" src="assets/images/icons/galleryBtn.png">
+    <img id="menuBtn" src="assets/images/icons/controllerBtn.png">
+    <img id="menuBtn" src="assets/images/icons/settingsBtn.png">
+    <img onclick="window.open('chrome:/\/\quit'); " id="menuBtn" src="assets/images/icons/powerBtn.png">
 
 </div>
 
 <div id="bottomLine"></div>
-<img id="controllerDisplay" src="assets/images/handHeld.png"> 
+<img id="controllerDisplay" src="assets/images/icons/handHeld.png"> 
 </body>
 <script src="scripts/index.js"></script>
 </html>
