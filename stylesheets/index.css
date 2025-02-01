@@ -38,6 +38,7 @@ pre {
     height: 3.5vw;
     top: 2.7vw;
     left:3vw;
+    filter: drop-shadow(0vw 0vw 0.2vw #222);
 }
 #profileIcon:hover {
     border-radius: 50%;
@@ -84,7 +85,6 @@ pre {
     margin: 0.7vw;
     filter: drop-shadow(0vw 0vw 0.2vw #222);
     animation: none;
-    transition-duration: 100;
 }
 #menuBtn:hover {
     border-radius: 50%;
