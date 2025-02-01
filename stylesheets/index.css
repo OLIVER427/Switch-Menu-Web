@@ -104,6 +104,7 @@ pre {
     display: flex;
     justify-content: start;
     align-items: center;
+    transition-duration: 150ms;
 }
 #game {
     /*background-color: blue;*/
