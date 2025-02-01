@@ -15,12 +15,26 @@ html {
 #backArrow {
     transform: translate(-50%,-50%);
     position: fixed;
-    top:3vw;
-    left: 3vw;
+    top:4vw;
+    left: 4vw;
     width: 6vw;
     transition-duration: 100ms;
 }
 #backArrow:hover {
     cursor: pointer;
     width: 7vw;
+    animation: blueShadow 0.9s infinite linear;
+}
+@keyframes blueShadow {
+    0% {
+        filter: drop-shadow(0vw 0vw 0.3vw rgb(41, 106, 171));
+    }
+
+    50% {
+        filter: drop-shadow(0vw 0vw 0.2vw rgb(0, 247, 255));
+
+    }
+    100% {
+        filter: drop-shadow(0vw 0vw 0.3vw rgb(41, 106, 171));
+    }
 }

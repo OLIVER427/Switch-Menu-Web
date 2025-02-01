@@ -3,6 +3,18 @@ var time = new Date();
 console.log(
   time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
 );
+
+if (navigator.userAgent.includes("Chrome")) {
+  //alert('Hello chromium based browser!')
+  document.getElementById("profileIcon").src = "assets/images/icons/chromium.png"
+} else if (navigator.userAgent.includes("Firefox")) {
+  //alert('Hello firefox!')
+  document.getElementById("profileIcon").src = "assets/images/icons/firefox.png"
+} else {
+
+  document.getElementById("profileIcon").src = "assets/images/icons/unknown.png"
+}
+
 function gameFrame() {
 time = new Date();
 document.getElementById('clock').innerHTML = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }).slice(0, -2)

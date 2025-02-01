@@ -32,6 +32,18 @@ pre {
     transform: translate(-50%, -50%);
     left: 50vw;
 }
+#profileIcon {
+    position: fixed;
+    width:3.5vw;
+    height: 3.5vw;
+    top: 2.7vw;
+    left:3vw;
+}
+#profileIcon:hover {
+    border-radius: 50%;
+    animation: blueEffect 0.9s infinite linear;
+    cursor: pointer;
+}
 #topRight {
     position: fixed;
     /* background-color: blue; */
@@ -73,9 +85,9 @@ pre {
     filter: drop-shadow(0vw 0vw 0.2vw #222);
     animation: none;
     transition-duration: 100;
-    border-radius: 50%;
 }
 #menuBtn:hover {
+    border-radius: 50%;
     animation: blueEffect 0.9s infinite linear;
     cursor: pointer;
 }
@@ -87,8 +99,8 @@ pre {
     justify-content: center;
     align-items: center;
     position: fixed;
-    left: 5vw;
-    bottom:15vw;
+    left: 4vw; /* previously 5vw */
+    bottom:32.5vh; /* previously 15vw */
     display: flex;
     justify-content: start;
     align-items: center;
@@ -105,6 +117,8 @@ pre {
 #game:hover {
     cursor: pointer;
     animation: blueEffect 0.9s infinite linear;
+    outline-offset: 0.3vw;
+
 }
 /*
 placeholder:hover {
