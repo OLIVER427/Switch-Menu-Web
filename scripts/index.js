@@ -1,4 +1,18 @@
 // gotta have that system clock (thanks random person on stack overflow, mine would have been way too complicated)
+
+let albumSfx = new Audio('assets/sfx/Album.wav')
+let clickSfx = new Audio('assets/sfx/Click.wav')
+let controllerSfx = new Audio('assets/sfx/Controller.wav')
+let errorSfx = new Audio('assets/sfx/Error.wav')
+let eshopSfx = new Audio('assets/sfx/Eshop.wav')
+let enterGameSfx = new Audio('assets/sfx/Game.wav')
+let homeSfx = new Audio('assets/sfx/Home.wav')
+let newsSfx = new Audio('assets/sfx/News.wav')
+let settingsSfx = new Audio('assets/sfx/Settings.wav')
+let tooFarSfx = new Audio('assets/sfx/TooFar.wav')
+let userSfx = new Audio('assets/sfx/User.wav')
+
+
 let browser
 let time = new Date();
 console.log(
@@ -22,12 +36,16 @@ document.addEventListener('keydown', (event) => {
   if (event.key == "ArrowRight") {
     if (gamesPos != -129) {
       gamesPos -= 19
+    } else {
+      gamesPos = 4
     }
       document.getElementById('gameCon').style.left = gamesPos + "vw"
   }
   if (event.key == "ArrowLeft") {
     if (gamesPos != 4) {
       gamesPos += 19
+    } else {
+      gamesPos = -129
     }
     document.getElementById('gameCon').style.left = gamesPos + "vw"
   }

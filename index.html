@@ -6,7 +6,7 @@
     <title>Home</title>
 </head>
 <body>
-<img id="profileIcon" onclick="alert('You are currently using a' + browser + ' browser')">
+<img id="profileIcon" onclick="userSfx.play()    /*alert('You are currently using a' + browser + ' browser')*/">
 <div id="topRight">
 <pre id="clock">00:00</pre><p id="AmPm" style="margin-right: 2vw;font-size: 1vw; margin-top: 1.35vw;">AM</p>
 <img id="wifi" src="assets/images/icons/wifiIcon.png"> 
@@ -15,18 +15,30 @@
 </div>
 
 <div id="gameCon">
+<!--there can be a maximum of 12 games here-->
 
 <img id="game" src="assets/images/gameCovers/tetris.jpg" onclick="window.location=('player/Tetris')">
+
 <img id="game" src="assets/images/gameCovers/firered.jpg" onclick="window.location=('player/FireRed')">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
+
 <img id="game" src="assets/images/gameCovers/" onclick="">
 
 
@@ -34,11 +46,11 @@
 
 <div id="btnCon">
     <img id="menuBtn" src="assets/images/icons/switchOffline.png">
-    <img id="menuBtn" src="assets/images/icons/newsBtn.png">
-    <img id="menuBtn" src="assets/images/icons/EshopBtn.png">
-    <img id="menuBtn" src="assets/images/icons/galleryBtn.png">
-    <img id="menuBtn" src="assets/images/icons/controllerBtn.png">
-    <img id="menuBtn" src="assets/images/icons/settingsBtn.png">
+    <img id="menuBtn" src="assets/images/icons/newsBtn.png" onclick="newsSfx.play()">
+    <img id="menuBtn" src="assets/images/icons/EshopBtn.png" onclick="eshopSfx.play()">
+    <img id="menuBtn" src="assets/images/icons/galleryBtn.png" onclick="albumSfx.play()">
+    <img id="menuBtn" src="assets/images/icons/controllerBtn.png" onclick="controllerSfx.play()">
+    <img id="menuBtn" src="assets/images/icons/settingsBtn.png" onclick="settingsSfx.play()">
     <img onclick="window.open('chrome:/\/\quit'); " id="menuBtn" src="assets/images/icons/powerBtn.png">
 
 </div>
