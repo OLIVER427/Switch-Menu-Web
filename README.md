@@ -1,4 +1,10 @@
-# Switch-Menu-Web
+![Static Badge](https://img.shields.io/badge/BinBashBanana-webretro-yellow)
+![GitHub License](https://img.shields.io/github/license/OLIVER427/Switch-Menu-Web)
+![GitHub repo size](https://img.shields.io/github/repo-size/OLIVER427/Switch-Menu-Web)
+![GitHub Repo stars](https://img.shields.io/github/stars/OLIVER427/Switch-Menu-Web)
+![GitHub forks](https://img.shields.io/github/forks/OLIVER427/Switch-Menu-Web)
+# Switch Home Menu for Web
+
 An interesting recreation of the switch's home page in a web browser
 
 ## What does it do?
@@ -13,5 +19,3 @@ Well I am planning on making accurate recreations of other things as application
  
 # theres an emulator?
 The menu itself is not an emulator, or emulated at all, but I have included a slightly modified (only the css was modified) version of [BinBashBanana](https://github.com/BinBashBanana)'s [webretro](https://github.com/BinBashBanana/webretro), which is a port of retroarch to a browser. I am NOT including roms, so you will have to provide them yourself. it took me an annoying amount of time to figure out how to not count it when deciding the languages of this repo cause I do not want to claim [webretro](https://github.com/BinBashBanana/webretro) as my own.
-
-## 
