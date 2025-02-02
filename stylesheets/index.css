@@ -25,9 +25,9 @@ pre {
 }
 #bottomLine {
     position: fixed;
-    background-color: #656565;
+    background-color: white;
     width: 95vw;
-    height: 0.2vw;
+    height: 0.1vw;
     bottom: 5vw;
     transform: translate(-50%, -50%);
     left: 50vw;
