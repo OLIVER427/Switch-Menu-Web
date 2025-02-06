@@ -39,7 +39,7 @@ document.addEventListener('keydown', (event) => {
     } else {
       gamesPos = 4
     }
-      document.getElementById('gameCon').style.left = gamesPos + "vw"
+      document.getElementById('gameConCon').style.left = gamesPos + "vw"
   }
   if (event.key == "ArrowLeft") {
     if (gamesPos != 4) {
@@ -47,15 +47,26 @@ document.addEventListener('keydown', (event) => {
     } else {
       gamesPos = -129
     }
-    document.getElementById('gameCon').style.left = gamesPos + "vw"
+    document.getElementById('gameConCon').style.left = gamesPos + "vw"
   }
 })
+
+function openNews() {
+  newsSfx.play()
+  document.body.style.transitionDuration = "200ms"
+  document.body.style.opacity = "0%"
+  setTimeout(() => {
+    document.body.style.opacity = "100%"
+setTimeout(() => {
+  document.body.style.transitionDuration = "0ms"
+}, 200);
+  }, 1000);
+}
 
 function gameFrame() {
 time = new Date();
 document.getElementById('clock').innerHTML = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }).slice(0, -2)
 document.getElementById('AmPm').innerHTML = time.toLocaleString('en-US', { hour: 'numeric',hour12: true }).replace(/[0-9]/g, '');
-requestAnimationFrame(gameFrame);
 
 if (navigator.onLine) {
     document.getElementById('wifi').src = "assets/images/icons/wifiIcon.png"

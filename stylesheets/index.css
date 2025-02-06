@@ -94,7 +94,7 @@ pre {
     animation: blueEffect 0.9s infinite linear;
     cursor: pointer;
 }
-#gameCon {
+#gameConCon {
     display: flex;
     /* background-color: hotpink; */
     width: 200vw;
@@ -108,21 +108,53 @@ pre {
     justify-content: start;
     align-items: center;
     transition-duration: 150ms;
+    transition-property: left, right;
 }
+#gameCon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    /*background-color: red;*/
+    height: 25vw;
+    width: 18vw;
+    margin-left: 1vw;
+    margin-bottom: 7vw;
+}
+#invisBox {
+    /* background-color: red; */
+    width: 18vw;
+    height: 18vw;
+    position: absolute;
+    top: 3vw;
+    z-index: 10;
+}
+#invisBox:hover + p {
+    color: #33acdf;
+}
+
+#gameCon > p {
+    font-size: 2vw;
+    margin-bottom: 0.8vw;
+    color: #00000000;
+    user-select: none;
+}
+
+#gameCon > p:hover {
+    color: #33acdf;
+}
+
 #game {
     /*background-color: blue;*/
     width: 18vw;
     height: 18vw;
-    margin-left: 1vw;
     filter: drop-shadow(0vw 0vw 0.4vw #222);
     object-fit:cover;
-
 }
-#game:hover {
+#invisBox:hover {
     cursor: pointer;
     animation: blueEffect 0.9s infinite linear;
     outline-offset: 0.3vw;
-
 }
 /*
 placeholder:hover {
