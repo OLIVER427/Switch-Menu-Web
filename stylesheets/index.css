@@ -140,10 +140,6 @@ pre {
     user-select: none;
 }
 
-#gameCon > p:hover {
-    color: #33acdf;
-}
-
 #game {
     /*background-color: blue;*/
     width: 18vw;
