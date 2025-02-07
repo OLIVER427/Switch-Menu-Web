@@ -1,6 +1,6 @@
 @font-face { 
     font-family: 'Switch'; 
-    src: url('../assets/fonts/font.otf') format('opentype'); 
+    src: url('../assets/fonts/font2.ttf') format('truetype'); 
     font-weight: normal; 
     font-style: normal; 
 }
@@ -69,7 +69,7 @@ pre {
 #wifi {
     width: 2vw;
     margin-right: 2vw;
-    margin-bottom: 0.25vw;
+    margin-bottom: 0vw;
 }
 #btnCon {
     display: flex;
